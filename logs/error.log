@@ -1,0 +1,62 @@
+[18-Mar-2024 05:16:16 UTC] Illuminate\Http\Exceptions\HttpResponseException in /home/n1603213/public_html/certitude.pakarangan.id/app/Domain/Install/Controllers/Index.php:29
+Stack trace:
+#0 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/BoundMethod.php(36): Leantime\Domain\Install\Controllers\Index->init()
+#1 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/Util.php(41): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#2 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/BoundMethod.php(93): Illuminate\Container\Util::unwrapIfClosure()
+#3 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/BoundMethod.php(37): Illuminate\Container\BoundMethod::callBoundMethod()
+#4 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/Container.php(661): Illuminate\Container\BoundMethod::call()
+#5 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Controller.php(76): Illuminate\Container\Container->call()
+#6 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Controller.php(49): Leantime\Core\Controller->executeActions()
+#7 [internal function]: Leantime\Core\Controller->__construct()
+#8 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/Container.php(929): ReflectionClass->newInstanceArgs()
+#9 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/Container.php(770): Illuminate\Container\Container->build()
+#10 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/container/Container.php(706): Illuminate\Container\Container->resolve()
+#11 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Frontcontroller.php(130): Illuminate\Container\Container->make()
+#12 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Frontcontroller.php(75): Leantime\Core\Frontcontroller::executeAction()
+#13 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/HttpKernel.php(62): Leantime\Core\Frontcontroller::dispatch()
+#14 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(141): Leantime\Core\HttpKernel->Leantime\Core\{closure}()
+#15 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(116): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#16 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/HttpKernel.php(62): Illuminate\Pipeline\Pipeline->then()
+#17 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(141): Leantime\Core\HttpKernel->Leantime\Core\{closure}()
+#18 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Middleware/CurrentProject.php(25): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#19 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(180): Leantime\Core\Middleware\CurrentProject->handle()
+#20 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Middleware/Localization.php(38): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#21 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(180): Leantime\Core\Middleware\Localization->handle()
+#22 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Middleware/Auth.php(74): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#23 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(180): Leantime\Core\Middleware\Auth->handle()
+#24 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Middleware/Updated.php(37): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#25 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(180): Leantime\Core\Middleware\Updated->handle()
+#26 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Middleware/Installed.php(55): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#27 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(180): Leantime\Core\Middleware\Installed->handle()
+#28 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Middleware/InitialHeaders.php(22): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#29 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(180): Leantime\Core\Middleware\InitialHeaders->handle()
+#30 /home/n1603213/public_html/certitude.pakarangan.id/vendor/illuminate/pipeline/Pipeline.php(116): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}()
+#31 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/HttpKernel.php(63): Illuminate\Pipeline\Pipeline->then()
+#32 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Bootloader.php(300): Leantime\Core\HttpKernel->handle()
+#33 /home/n1603213/public_html/certitude.pakarangan.id/app/Core/Bootloader.php(170): Leantime\Core\Bootloader->handleRequest()
+#34 /home/n1603213/public_html/certitude.pakarangan.id/public/index.php(18): Leantime\Core\Bootloader->boot()
+#35 {main}
+[18-Mar-2024 05:16:20 UTC] Adding Event Listener to request_terminated
+[18-Mar-2024 05:16:20 UTC] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:16:39 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:16:39 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:17:15 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:17:15 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:18:17 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:18:17 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:19:17 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:19:17 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:20:17 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:20:17 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:21:17 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:21:17 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:22:46 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:22:46 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:23:47 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:23:47 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:32:32 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:32:32 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:33:09 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:33:09 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
+[17-Mar-2024 22:34:11 America/Los_Angeles] Adding Event Listener to request_terminated
+[17-Mar-2024 22:34:11 America/Los_Angeles] PHP Fatal error:  Declaration of Leantime\Core\ConsoleKernel::queue(string $command, array $parameters = []) must be compatible with Illuminate\Contracts\Console\Kernel::queue($command, array $parameters = []) in /home/n1603213/public_html/certitude.pakarangan.id/app/Core/ConsoleKernel.php on line 241
