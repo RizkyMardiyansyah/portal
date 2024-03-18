@@ -63,6 +63,7 @@ $ticketTypes = $tpl->get('ticketTypes');
             <div class="htmx-indicator subtaskIndicator">
                 Loading Subtasks ...<br /><br />
             </div>
+            
 
         <h4 class="widgettitle title-light"><span
                     class="fa-solid fa-comments-question-check"></span><?php echo $tpl->__('subtitles.discussion'); ?></h4>
