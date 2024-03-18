@@ -65,6 +65,22 @@ $ticketTypes = $tpl->get('ticketTypes');
             </div>
 
         <h4 class="widgettitle title-light"><span
+                    class="fa-solid fa-comments-question-check"></span><?php echo $tpl->__('subtitles.discussion'); ?></h4>
+
+        <div class="row-fluid">
+        <form method="post" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id; ?>" class="formModal">
+            <input type="hidden" name="comment" value="1" />
+            <?php
+            $tpl->assign('formUrl', "" . BASE_URL . "/tickets/showTicket/" . $ticket->id . "");
+
+            $tpl->displaySubmodule('comments-generalComment') ;
+            ?>
+        </form>
+        </div>
+
+        
+
+        <h4 class="widgettitle title-light"><span
                     class="fa-solid fa-comments"></span><?php echo $tpl->__('subtitles.discussion'); ?></h4>
 
         <div class="row-fluid">
