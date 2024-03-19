@@ -64,7 +64,7 @@ $ticketTypes = $tpl->get('ticketTypes');
                 Loading Subtasks ...<br /><br />
             </div>
 
-        <hr />
+        
         <h4 class="widgettitle title-light"><span
                     class="fa-solid fa-comments"></span><?php echo $tpl->__('After Action Review'); ?></h4>
         <h3 class="widgettitle title-light">What Suppose To do</h3>
@@ -102,19 +102,8 @@ $ticketTypes = $tpl->get('ticketTypes');
             ?>
         </form>
         </div>
-
-        <h3 class="widgettitle title-light">What Suppose To do</h3>
-        <div class="row-fluid">
-        <form method="post" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id; ?>" class="formModal">
-            <input type="hidden" name="comment" value="1" />
-            <?php
-            $tpl->assign('formUrl', "" . BASE_URL . "/tickets/showTicket/" . $ticket->id . "");
-
-            $tpl->displaySubmodule('comments-generalComment') ;
-            ?>
-        </form>
-        </div>
-
+        <br/>
+        <hr />
         
 
         <h4 class="widgettitle title-light"><span
