@@ -70,19 +70,19 @@ $ticketTypes = $tpl->get('ticketTypes');
         <h3 class="widgettitle title-light">What Suppose To do</h3>
         <div class="row-fluid">
         <form method="post" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id; ?>" class="formModal">
-            <input type="hidden" name="comment" value="1" />
-            <?php
+            <input type="hidden" name="todo" value="1" />
+            <!-- <?php
             $tpl->assign('formUrl', "" . BASE_URL . "/tickets/showTicket/" . $ticket->id . "");
 
             $tpl->displaySubmodule('comments-generalComment') ;
-            ?>
+            ?> -->
         </form>
         </div>
 
         <h3 class="widgettitle title-light">What Actualy Happened</h3>
         <div class="row-fluid">
         <form method="post" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id; ?>" class="formModal">
-            <input type="hidden" name="comment" value="1" />
+            <input type="hidden" name="happened" value="1" />
             <?php
             $tpl->assign('formUrl', "" . BASE_URL . "/tickets/showTicket/" . $ticket->id . "");
 
@@ -94,7 +94,7 @@ $ticketTypes = $tpl->get('ticketTypes');
         <h3 class="widgettitle title-light">What We Learned</h3>
         <div class="row-fluid">
         <form method="post" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id; ?>" class="formModal">
-            <input type="hidden" name="comment" value="1" />
+            <input type="hidden" name="learned" value="1" />
             <?php
             $tpl->assign('formUrl', "" . BASE_URL . "/tickets/showTicket/" . $ticket->id . "");
 
