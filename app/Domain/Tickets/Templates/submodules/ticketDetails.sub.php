@@ -66,7 +66,7 @@ $ticketTypes = $tpl->get('ticketTypes');
 
            
         <h4 class="widgettitle title-light"><span
-                    class="fa-solid fa-ballot-check"></span><?php echo $tpl->__('After Action Review'); ?></h4>
+                    class="fa-solid fa-comments"></span><?php echo $tpl->__('After Action Review'); ?></h4>
 
         <div class="row-fluid">
         <form method="post" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id; ?>" class="formModal">
