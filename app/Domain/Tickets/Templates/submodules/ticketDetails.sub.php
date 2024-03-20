@@ -71,11 +71,11 @@ $ticketTypes = $tpl->get('ticketTypes');
         <div class="row-fluid">
         <form method="post" action="<?=BASE_URL ?>/tickets/showTicket/<?php echo $ticket->id; ?>" class="formModal">
             <input type="hidden" name="todo" value="1" />
-            <!-- <?php
+            <?php
             $tpl->assign('formUrl', "" . BASE_URL . "/tickets/showTicket/" . $ticket->id . "");
 
             $tpl->displaySubmodule('comments-generalComment') ;
-            ?> -->
+            ?>
         </form>
         </div>
 
